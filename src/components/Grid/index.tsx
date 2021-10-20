@@ -2,7 +2,7 @@ import { Col as FlexCol, Grid as FlexGrid, Row as FlexRow } from 'react-styled-f
 import styled from 'styled-components';
 
 const RowStyled = styled(FlexRow)`
-
+background-color: 'black'
 `;
 
 export const Grid = FlexGrid;

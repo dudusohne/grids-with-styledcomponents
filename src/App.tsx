@@ -5,9 +5,9 @@ import { GridHeadQuarters } from './pages/GridHeadQuarters';
 
 function App() {
   return (
-    <>
+    <ThemeProvider theme={GridSettings}>
       <GridHeadQuarters />
-    </>
+    </ThemeProvider>
   );
 }
 
