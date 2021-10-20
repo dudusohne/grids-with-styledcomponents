@@ -8,19 +8,15 @@ export function GridHeadQuarters() {
         <ThemeProvider theme={GridSettings}>
             <Grid style={{ margin: '0 auto', padding: '0', width: '100%', height: '100%' }}>
                 <Row>
-
-                    <Col xs={12} style={{ backgroundColor: 'pink' }}>
-                        <Row start="xs">
+                    <Col xs={12} style={{ backgroundColor: 'pink', height: '10rem' }}>
+                        <Row end="xs">
                             <Col xs={6} style={{ backgroundColor: 'purple' }}>
                                 1
                             </Col>
-
                         </Row>
                     </Col>
-
                 </Row>
             </Grid>
-
         </ThemeProvider>
     )
 }
