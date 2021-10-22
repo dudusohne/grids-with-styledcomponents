@@ -1,22 +1,22 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import { Grid, Row, Col, GridSettings } from '../../components/Grid';
+import { Grid, Row, Col } from '../../components/Grid';
+import { Circle, Rotate } from './grid.styles';
 
 export function GridHeadQuarters() {
 
     return (
-        <ThemeProvider theme={GridSettings}>
-            <Grid style={{ margin: '0 auto', padding: '0', width: '100%', height: '100%' }}>
-                <Row>
-                    <Col xs={12} style={{ backgroundColor: 'pink', height: '10rem' }}>
-                        <Row end="xs">
-                            <Col xs={6} style={{ backgroundColor: 'purple' }}>
-                                1
-                            </Col>
-                        </Row>
-                    </Col>
-                </Row>
-            </Grid>
-        </ThemeProvider>
+        <Grid style={{ margin: '0 auto', padding: '0', width: '100%', height: '100%' }}>
+            <Row>
+                <Col xs={12} style={{ backgroundColor: 'pink', height: '10rem' }}>
+                    <Row end="xs" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Col xs={6} style={{ backgroundColor: 'purple', display: 'flex', justifyContent: 'center' }}>
+                            <Circle />
+                            <Rotate><Circle /></Rotate>
+                            <Circle />
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
+        </Grid>
     )
 }
