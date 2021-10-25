@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid, Row, Col } from '../../components/Grid';
 import { Header } from '../../components/Header';
 import { Circle, Rotate } from './grid.styles';
+import SemiCircleProgressBar from "react-progressbar-semicircle";
 
 export function GridHeadQuarters() {
 
@@ -10,9 +11,10 @@ export function GridHeadQuarters() {
             <Header />
             <Row end="xs" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <Col xs={6} style={{ backgroundColor: 'purple', display: 'flex', justifyContent: 'center' }}>
-                    <Circle />
+                    {/* <Circle />
                     <Rotate><Circle /></Rotate>
-                    <Circle />
+                    <Circle /> */}
+                    <SemiCircleProgressBar percentage={33} showPercentValue />
                 </Col>
             </Row>
         </Grid>

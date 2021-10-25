@@ -9268,6 +9268,11 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
+react-progressbar-semicircle@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/react-progressbar-semicircle/-/react-progressbar-semicircle-1.2.1.tgz#f59ccd8dd6c9ac9f098dd17924b983f4524cb8a3"
+  integrity sha512-idSWvbagqUo02H4nsbN6wwGAocNo/rWjRyIudhx3VPSeMg1m/vkjs7Xx4XSfuPLxP1p4DbFL7IW2JoeW9Mz4CQ==
+
 react-refresh@^0.8.3:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
