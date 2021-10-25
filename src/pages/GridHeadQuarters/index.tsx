@@ -1,11 +1,13 @@
 import React from 'react';
 import { Grid, Row, Col } from '../../components/Grid';
+import { Header } from '../../components/Header';
 import { Circle, Rotate } from './grid.styles';
 
 export function GridHeadQuarters() {
 
     return (
         <Grid style={{ margin: '0 auto', padding: '0', width: '100%', height: '100%' }}>
+            <Header />
             <Row>
                 <Col xs={12} style={{ backgroundColor: 'pink', height: '10rem' }}>
                     <Row end="xs" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
