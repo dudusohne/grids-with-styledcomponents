@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Row, Col } from '../../components/Grid';
 import { Header } from '../../components/Header';
 import { Circle, Rotate } from './grid.styles';
-import SemiCircleProgressBar from "react-progressbar-semicircle";
+// import SemiCircleProgressBar from 'react-progressbar-semicircle';
 
 export function GridHeadQuarters() {
 
