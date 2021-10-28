@@ -14,7 +14,7 @@ export function GridHeadQuarters() {
                     {/* <Circle />
                     <Rotate><Circle /></Rotate>
                     <Circle /> */}
-                    <SemiCircleProgressBar percentage={33} showPercentValue />
+                    {/* <SemiCircleProgressBar percentage={33} showPercentValue /> */}
                 </Col>
             </Row>
         </Grid>
