@@ -1,8 +1,13 @@
 import React from 'react';
 import { Grid, Row, Col } from '../../components/Grid';
 import { Header } from '../../components/Header';
-import { Circle, Rotate } from './grid.styles';
-// import SemiCircleProgressBar from 'react-progressbar-semicircle';
+import {
+    CircularProgressbar,
+    buildStyles
+} from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
+
+import ChangingProgressProvider from "./ChangingProgressProvider";
 
 export function GridHeadQuarters() {
 
@@ -11,10 +16,24 @@ export function GridHeadQuarters() {
             <Header />
             <Row end="xs" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <Col xs={6} style={{ backgroundColor: 'purple', display: 'flex', justifyContent: 'center' }}>
-                    {/* <Circle />
-                    <Rotate><Circle /></Rotate>
-                    <Circle /> */}
-                    {/* <SemiCircleProgressBar percentage={33} showPercentValue /> */}
+
+                    <div style={{ transform: 'rotate(45deg)' }}>
+                        <ChangingProgressProvider values={[0, 20, 80]}>
+                            {(value: any) => (
+                                <CircularProgressbar
+                                    value={value}
+                                    text={`${value}%`}
+                                    circleRatio={0.50}
+                                    styles={buildStyles({
+                                        rotation: 1 / 2 + 1 / 8,
+                                        strokeLinecap: "butt",
+                                        trailColor: "#eee"
+                                    })}
+                                />
+                            )}
+                        </ChangingProgressProvider>
+                    </div>
+
                 </Col>
             </Row>
         </Grid>
